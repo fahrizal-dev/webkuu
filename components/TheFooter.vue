@@ -11,9 +11,9 @@
         <div class="sm:col-span-2 lg:col-span-1">
           <div class="flex items-center gap-3 mb-4">
             <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-cyan-400 to-ocean-500 flex items-center justify-center">
-              <span class="text-navy-950 font-display font-bold text-base">N</span>
+              <span class="text-navy-950 font-display font-bold text-base">R</span>
             </div>
-            <span class="font-display font-bold text-lg text-white">[NAMA BRANDKU]</span>
+            <span class="font-display font-bold text-lg text-white">Rizalique</span>
           </div>
           <p class="text-white/40 text-sm leading-relaxed mb-5 max-w-xs">
             Jasa pembuatan website profesional untuk bisnis modern. Kami membangun digital presence yang berdampak.
@@ -28,6 +28,15 @@
               :aria-label="social.label"
             >
               <component :is="social.icon" :size="16" />
+            </a>
+            <!-- TikTok -->
+            <a
+              href="https://www.tiktok.com/@isca203"
+              target="_blank"
+              aria-label="TikTok"
+              class="w-9 h-9 rounded-lg glass-card flex items-center justify-center text-white/40 hover:text-cyan-400 hover:border-cyan-400/30 transition-all"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg>
             </a>
           </div>
         </div>
@@ -62,19 +71,19 @@
           <ul class="space-y-3">
             <li class="flex items-center gap-3 text-white/40 text-sm">
               <MessageCircle :size="14" class="text-cyan-400 flex-shrink-0" />
-              <a href="https://wa.me/6281234567890" target="_blank" class="hover:text-cyan-400 transition-colors">
-                +62 812-3456-7890
+              <a href="https://wa.me/62895321875208" target="_blank" class="hover:text-cyan-400 transition-colors">
+                +62 895-321-875-208
               </a>
             </li>
             <li class="flex items-center gap-3 text-white/40 text-sm">
               <Mail :size="14" class="text-cyan-400 flex-shrink-0" />
-              <a href="mailto:hello@namabrandku.com" class="hover:text-cyan-400 transition-colors">
-                hello@namabrandku.com
+              <a href="mailto:fahrizaladji171@gmail.com" class="hover:text-cyan-400 transition-colors">
+                fahrizaladji171@gmail.com
               </a>
             </li>
             <li class="flex items-start gap-3 text-white/40 text-sm">
               <MapPin :size="14" class="text-cyan-400 flex-shrink-0 mt-0.5" />
-              <span>Jakarta, Indonesia</span>
+              <span>Yogyakarta, Indonesia</span>
             </li>
           </ul>
         </div>
@@ -83,7 +92,7 @@
       <!-- Bottom -->
       <div class="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
         <p class="text-white/30 text-xs">
-          © {{ new Date().getFullYear() }} [NAMA BRANDKU]. All rights reserved.
+          © {{ new Date().getFullYear() }} Rizalique. All rights reserved.
         </p>
         <div class="flex items-center gap-1 text-white/30 text-xs">
           <span>Made with</span>
@@ -96,12 +105,13 @@
 </template>
 
 <script setup lang="ts">
-import { Instagram, Github, Linkedin, MessageCircle, Mail, MapPin } from 'lucide-vue-next'
+import { Instagram, Youtube, Facebook, Github, MessageCircle, Mail, MapPin } from 'lucide-vue-next'
 
 const socials = [
-  { icon: Instagram, label: 'Instagram', href: 'https://instagram.com' },
-  { icon: Github, label: 'GitHub', href: 'https://github.com' },
-  { icon: Linkedin, label: 'LinkedIn', href: 'https://linkedin.com' },
+  { icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/fahrizallm_10/' },
+  { icon: Github, label: 'GitHub', href: 'https://github.com/fahrizal-dev' },
+  { icon: Facebook, label: 'Facebook', href: 'https://web.facebook.com/fahrizalQQ/?locale=id_ID' },
+  { icon: Youtube, label: 'YouTube', href: 'https://www.youtube.com/@pahrisukatidurwa' },
 ]
 
 const footerServices = [

@@ -14,6 +14,6 @@
 
 <script setup lang="ts">
 useHead({
-  title: '[NAMA BRANDKU] - Jasa Pembuatan Website Professional',
+  title: 'Rizalique - Jasa Pembuatan Website Professional',
 })
 </script>

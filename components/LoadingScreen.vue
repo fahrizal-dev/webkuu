@@ -4,9 +4,9 @@
       <!-- Logo -->
       <div class="flex items-center gap-3">
         <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-400 to-ocean-500 flex items-center justify-center">
-          <span class="text-navy-950 font-display font-bold text-lg">N</span>
+          <span class="text-navy-950 font-display font-bold text-lg">R</span>
         </div>
-        <span class="font-display font-bold text-xl text-white">[NAMA BRANDKU]</span>
+        <span class="font-display font-bold text-xl text-white">Rizalique</span>
       </div>
 
       <!-- Progress bar -->

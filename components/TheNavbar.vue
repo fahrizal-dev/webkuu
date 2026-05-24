@@ -7,9 +7,9 @@
       <!-- Logo -->
       <NuxtLink to="/" class="flex items-center gap-3 group">
         <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-cyan-400 to-ocean-500 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
-          <span class="text-navy-950 font-display font-bold text-base">N</span>
+          <span class="text-navy-950 font-display font-bold text-base">R</span>
         </div>
-        <span class="font-display font-bold text-lg text-white">[NAMA BRANDKU]</span>
+        <span class="font-display font-bold text-lg text-white">Rizalique</span>
       </NuxtLink>
 
       <!-- Desktop Nav -->

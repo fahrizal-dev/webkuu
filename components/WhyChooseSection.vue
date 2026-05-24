@@ -11,7 +11,7 @@
           Why Choose Us
         </div>
         <h2 class="section-title mb-4">
-          Kenapa Pilih <span class="gradient-text">[NAMA BRANDKU]</span>?
+          Kenapa Pilih <span class="gradient-text">Rizalique</span>?
         </h2>
         <p class="text-white/50 max-w-xl mx-auto">
           Kami tidak hanya membuat website — kami membangun aset digital yang bekerja untuk bisnis Anda.

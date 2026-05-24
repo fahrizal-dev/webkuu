@@ -60,6 +60,15 @@
               >
                 <component :is="social.icon" :size="18" />
               </a>
+              <!-- TikTok -->
+              <a
+                href="https://www.tiktok.com/@isca203"
+                target="_blank"
+                aria-label="TikTok"
+                class="w-10 h-10 rounded-xl glass-card flex items-center justify-center text-white/50 hover:text-cyan-400 hover:border-cyan-400/30 transition-all"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg>
+              </a>
             </div>
           </div>
         </div>
@@ -142,7 +151,7 @@
               </button>
 
               <a
-                href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20konsultasi%20tentang%20pembuatan%20website"
+                href="https://wa.me/62895321875208?text=Halo,%20saya%20ingin%20konsultasi%20tentang%20pembuatan%20website"
                 target="_blank"
                 class="btn-outline flex-1 justify-center py-4"
               >
@@ -167,7 +176,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Mail, Phone, MapPin, Instagram, Github, Linkedin, Send, MessageCircle, Loader2, CheckCircle } from 'lucide-vue-next'
+import { Mail, Phone, MapPin, Instagram, Youtube, Facebook, Github, Send, MessageCircle, Loader2, CheckCircle } from 'lucide-vue-next'
 
 const form = ref({
   name: '',
@@ -202,30 +211,31 @@ const contactInfo = [
   {
     icon: MessageCircle,
     label: 'WhatsApp',
-    value: '+62 812-3456-7890',
-    href: 'https://wa.me/6281234567890',
+    value: '+62 895-321-875-208',
+    href: 'https://wa.me/62895321875208',
     external: true,
   },
   {
     icon: Mail,
     label: 'Email',
-    value: 'hello@namabrandku.com',
-    href: 'mailto:hello@namabrandku.com',
+    value: 'fahrizaladji171@gmail.com',
+    href: 'mailto:fahrizaladji171@gmail.com',
     external: false,
   },
   {
     icon: MapPin,
     label: 'Lokasi',
-    value: 'Jakarta, Indonesia',
+    value: 'Yogyakarta, Indonesia',
     href: '#',
     external: false,
   },
 ]
 
 const socials = [
-  { icon: Instagram, label: 'Instagram', href: 'https://instagram.com' },
-  { icon: Github, label: 'GitHub', href: 'https://github.com' },
-  { icon: Linkedin, label: 'LinkedIn', href: 'https://linkedin.com' },
+  { icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/fahrizallm_10/' },
+  { icon: Github, label: 'GitHub', href: 'https://github.com/fahrizal-dev' },
+  { icon: Facebook, label: 'Facebook', href: 'https://web.facebook.com/fahrizalQQ/?locale=id_ID' },
+  { icon: Youtube, label: 'YouTube', href: 'https://www.youtube.com/@pahrisukatidurwa' },
 ]
 
 async function handleSubmit() {
