@@ -10,10 +10,10 @@
           Portfolio
         </div>
         <h2 class="section-title mb-4">
-          Karya <span class="gradient-text">Terbaik</span> Kami
+          Project <span class="gradient-text">Magang</span> RSIY PDHI
         </h2>
         <p class="text-white/50 max-w-xl mx-auto text-base">
-          Setiap project dikerjakan dengan dedikasi penuh untuk menghasilkan hasil terbaik.
+          5 sistem yang dibangun selama 6 bulan magang di RS Islam Yogyakarta PDHI.
         </p>
       </div>
 
@@ -185,64 +185,55 @@ interface Project {
 const activeCategory = ref('All')
 const selectedProject = ref<Project | null>(null)
 
-const categories = ['All', 'Company Profile', 'Landing Page', 'Dashboard', 'UMKM', 'Web App']
+const categories = ['All', 'Sistem RS', 'Web App', 'Dashboard', 'API']
 
 const projects: Project[] = [
   {
     id: 1,
-    title: 'PT Nusantara Jaya',
-    category: 'Company Profile',
-    description: 'Website company profile modern untuk perusahaan konstruksi.',
-    longDescription: 'Website company profile premium dengan animasi scroll yang halus, galeri proyek interaktif, dan form kontak terintegrasi. Dibangun dengan Nuxt.js dan TailwindCSS untuk performa optimal.',
+    title: 'SIDORRS - Sistem Dokumen RS',
+    category: 'Sistem RS',
+    description: 'Sistem manajemen dokumen regulasi & akreditasi RSIY PDHI Yogyakarta.',
+    longDescription: 'Sistem pengelolaan dokumen rumah sakit yang mencakup manajemen regulasi, akreditasi, izin karyawan, dan role management. Dilengkapi fitur dashboard, pencarian dokumen, dan kontrol akses berbasis role (Admin, TU, Karyawan).',
     gradient: 'from-blue-600/40 to-cyan-600/40',
-    tech: ['Nuxt.js', 'TailwindCSS', 'GSAP'],
+    tech: ['CodeIgniter 3', 'PHP', 'MySQL', 'Bootstrap'],
     featured: true,
   },
   {
     id: 2,
-    title: 'LaunchPad SaaS',
-    category: 'Landing Page',
-    description: 'Landing page konversi tinggi untuk produk SaaS.',
-    longDescription: 'Landing page dengan desain premium, animasi micro-interaction, A/B testing ready, dan optimasi konversi. Lighthouse score 98+.',
+    title: 'Sistem Audit Trail RS',
+    category: 'API',
+    description: 'Sistem monitoring & logging aktivitas seluruh aplikasi RSIY PDHI.',
+    longDescription: 'Sistem audit trail terpusat untuk memantau aktivitas real-time di semua aplikasi rumah sakit. Dilengkapi API dengan enkripsi RC4 + HMAC SHA256, token authentication, auto-archive data, dan client library untuk PHP, JavaScript, dan Python.',
     gradient: 'from-violet-600/40 to-purple-600/40',
-    tech: ['Vue.js', 'GSAP', 'Lenis'],
+    tech: ['CodeIgniter 3', 'PHP', 'MySQL', 'REST API'],
   },
   {
     id: 3,
-    title: 'AdminPro Dashboard',
-    category: 'Dashboard',
-    description: 'Dashboard admin dengan visualisasi data real-time.',
-    longDescription: 'Panel admin lengkap dengan charts interaktif, manajemen user, laporan otomatis, dan dark mode. Dibangun dengan Vue 3 dan Chart.js.',
+    title: 'Jadwal Dokter RSIY PDHI',
+    category: 'Web App',
+    description: 'Aplikasi web jadwal praktik dokter responsif terintegrasi API eksternal.',
+    longDescription: 'Aplikasi web untuk menampilkan jadwal praktik dokter secara real-time. Data diambil dari API eksternal RSIY PDHI, dilengkapi filter per poli, pencarian nama dokter, informasi kuota, dan tampilan responsif untuk semua perangkat.',
     gradient: 'from-emerald-600/40 to-teal-600/40',
-    tech: ['Vue 3', 'Pinia', 'Chart.js'],
+    tech: ['CodeIgniter 3', 'PHP', 'REST API', 'Bootstrap'],
   },
   {
     id: 4,
-    title: 'Warung Makan Barokah',
-    category: 'UMKM',
-    description: 'Website UMKM dengan menu digital dan pemesanan online.',
-    longDescription: 'Website restoran dengan menu digital interaktif, sistem pemesanan online, integrasi WhatsApp, dan manajemen konten mudah.',
+    title: 'Pendaftaran Pasien Online',
+    category: 'Sistem RS',
+    description: 'Sistem pendaftaran pasien online dengan upload dokumen & approval petugas.',
+    longDescription: 'Sistem pendaftaran pasien online yang memungkinkan pasien mengupload dokumen (BPJS, KTP, foto, surat rujukan, dll). Dilengkapi fitur approval oleh petugas, validasi dokumen, dan notifikasi status pendaftaran.',
     gradient: 'from-amber-600/40 to-orange-600/40',
-    tech: ['Nuxt.js', 'Supabase', 'WhatsApp API'],
+    tech: ['CodeIgniter 3', 'PHP', 'MySQL', 'Bootstrap'],
   },
   {
     id: 5,
-    title: 'MediCare System',
-    category: 'Web App',
-    description: 'Sistem manajemen rumah sakit terintegrasi.',
-    longDescription: 'Sistem rumah sakit komprehensif dengan modul pasien, dokter, jadwal, rekam medis elektronik, dan laporan keuangan.',
+    title: 'Aplikasi Manajemen Rapat',
+    category: 'Dashboard',
+    description: 'Sistem manajemen rapat lengkap dengan absensi, notulen, dan laporan.',
+    longDescription: 'Aplikasi manajemen rapat rumah sakit yang mencakup penjadwalan meeting, manajemen peserta, absensi digital, upload materi rapat, pencatatan notulen/minutes, laporan rapat, dan notifikasi push. Dibangun sebagai PWA.',
     gradient: 'from-rose-600/40 to-pink-600/40',
-    tech: ['Nuxt.js', 'Laravel', 'MySQL'],
+    tech: ['CodeIgniter 3', 'PHP', 'MySQL', 'PWA'],
     featured: true,
-  },
-  {
-    id: 6,
-    title: 'TechFlow Agency',
-    category: 'Company Profile',
-    description: 'Website agency digital dengan portfolio interaktif.',
-    longDescription: 'Website agency premium dengan animasi parallax, portfolio masonry, testimonial slider, dan blog terintegrasi.',
-    gradient: 'from-cyan-600/40 to-blue-600/40',
-    tech: ['Nuxt.js', 'GSAP', 'Contentful'],
   },
 ]
 
