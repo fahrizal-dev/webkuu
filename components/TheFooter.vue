@@ -111,7 +111,7 @@ const socials = [
   { icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/fahrizallm_10/' },
   { icon: Github, label: 'GitHub', href: 'https://github.com/fahrizal-dev' },
   { icon: Facebook, label: 'Facebook', href: 'https://web.facebook.com/fahrizalQQ/?locale=id_ID' },
-  { icon: Youtube, label: 'YouTube', href: 'https://www.youtube.com/@pahrisukatidurwa' },
+  { icon: Youtube, label: 'YouTube', href: 'https://youtube.com/@pahrisukatidur?si=jRh03N4DJkA18sjb' },
 ]
 
 const footerServices = [
