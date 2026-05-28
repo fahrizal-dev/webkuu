@@ -240,12 +240,26 @@ const socials = [
 
 async function handleSubmit() {
   isSubmitting.value = true
-  // Simulate API call
-  await new Promise(resolve => setTimeout(resolve, 1500))
-  isSubmitting.value = false
-  submitted.value = true
-  form.value = { name: '', email: '', service: '', budget: '', message: '' }
-  setTimeout(() => { submitted.value = false }, 5000)
+  try {
+    const res = await fetch('https://formspree.io/f/mojbrapy', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({
+        name: form.value.name,
+        email: form.value.email,
+        service: form.value.service,
+        budget: form.value.budget,
+        message: form.value.message,
+      }),
+    })
+    if (res.ok) {
+      submitted.value = true
+      form.value = { name: '', email: '', service: '', budget: '', message: '' }
+      setTimeout(() => { submitted.value = false }, 5000)
+    }
+  } finally {
+    isSubmitting.value = false
+  }
 }
 </script>
 
